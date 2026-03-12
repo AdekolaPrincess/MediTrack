@@ -5,20 +5,22 @@ import Header from "../components/Header";
 
 export default function Dashboard({ setOpen }) {
   return (
-    <div className="relative ">
+    <div className="relative flex flex-col justify-center items-center ">
       <Header title="Dashboard" setOpen={setOpen} />
 
-      <h2 className="font-bold text-2xl px-7 mt-7">
-        Smart Pill Dispenser <br />
-        Dashboard
-      </h2>
-      <div className="px-7 mt-5">
-        <span className="font-bold">Patient Name:</span>
-        <span>John Doe</span>
-      </div>
-      <div className="px-7 mt-2">
-        <span className="font-bold">Patient Condition:</span>
-        <span>Hypertension</span>
+      <div>
+        <h2 className="font-bold text-2xl px-7 mt-7">
+          Smart Pill Dispenser <br />
+          Dashboard
+        </h2>
+        <div className="px-7 mt-5">
+          <span className="font-bold">Patient Name:</span>
+          <span>John Doe</span>
+        </div>
+        <div className="px-7 mt-2">
+          <span className="font-bold">Patient Condition:</span>
+          <span>Hypertension</span>
+        </div>
       </div>
 
       <div className="max-w-4xl mx-auto flex justify-center gap-8  mt-15  ">
